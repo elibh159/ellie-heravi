@@ -4,6 +4,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import { ThemeProvider } from 'styled-components'
+import theme from './component/utilities/theme';
 import Navbar from './component/partials/Navbar';
 import Footer from './component/partials/Footer';
 import Loading from './component/partials/Loading';
@@ -14,7 +16,8 @@ const Home = lazy(() => import("./component/views/Home"));
 function App() {
   return (
     <div className="App">
-      <Router>
+      <ThemeProvider theme={theme}>
+        <Router>
         <Container>
           <Sidebar/>
           <Navbar />
@@ -26,6 +29,7 @@ function App() {
           </Suspense>
         </Container>
       </Router>
+      </ThemeProvider>
     </div>
   );
 }
