@@ -1,4 +1,5 @@
-import { LogoWrapper } from '../styles/logoSectionStyles';
+import { LogoWrapper, LogoBox } from '../styles/logoSectionStyles';
+import { data } from '../content/data';
 
-const LogoSection = ()  => (<LogoWrapper>Eliii HeRaVi</LogoWrapper>)
+const LogoSection = () => (<LogoWrapper><LogoBox logoImage={data.logo.src} /></LogoWrapper>)
 export default LogoSection;

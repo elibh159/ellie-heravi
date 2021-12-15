@@ -1,24 +1,14 @@
 
 const theme = {
-    white: "#ffffff",
     color: {
-        green: '#31d181',
+        green: "#31d181",
         black: "#000000",
-        mainRed: "#ff2e63",
         white: "#ffffff",
-    },
-    gradient: {
-        footerGradient: "linear-gradient(to right, #ff3c6c 0%, #46e2e1 100%)"
-    }
-};
-
-const sizes = {
+        greenGradient: 'linear-gradient(to right, rgba(28, 202, 162, 1) 0%, rgba(49, 209, 129, 1) 100%)',
+      },
     maxWidth: "1440px"
+
 };
 
+export default theme;
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
-    theme,
-    sizes
-}
