@@ -1,4 +1,11 @@
-import { ThisWrapper } from './styles';
+import ContentSection from './section/contentSection';
+import PhotoSection from './section/photoSection';
+import { Container,ThisWrapper } from './styles';
 
-const Home =()=>(<ThisWrapper>This is home page</ThisWrapper>);
+const Home = () => (<Container>
+    <ThisWrapper>
+        <PhotoSection/>
+        <ContentSection/>
+    </ThisWrapper>
+</Container>);
 export default Home;
