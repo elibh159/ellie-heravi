@@ -29,5 +29,4 @@ export const data = {
         src: imageOfEli,
         alt: "ELLIE BH"
     }
-
 };
