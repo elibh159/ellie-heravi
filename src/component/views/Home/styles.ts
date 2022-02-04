@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { media } from "../../utilities/grid";
 
 export const Container = styled.div`
-  padding: 1rem 0;
-  background-color: red;
   width: 100%;
   position: relative;
   display: flex;

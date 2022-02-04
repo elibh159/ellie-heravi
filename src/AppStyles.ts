@@ -9,7 +9,6 @@ export const Container = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-around;
-  background-color: black;
   justify-content: space-between;
 `;
 
