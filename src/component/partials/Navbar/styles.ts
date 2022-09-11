@@ -6,7 +6,9 @@ export const ThisWrapper = styled.div`
   width: 100%;
   position: relative;
   background: ${props => props.theme.color.greenGradient};
-
+  ${media.from.tablet`
+  background: none;
+  `}
 `;
 
 export const SidebarContainer = styled.div`

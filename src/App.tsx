@@ -23,7 +23,8 @@ function App() {
           <Navbar />
           <Suspense fallback={<Loading />}>
             <Routes>
-              <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
+              <Route path="/Home" element={<Home />} />
             </Routes>
             <Footer />
           </Suspense>

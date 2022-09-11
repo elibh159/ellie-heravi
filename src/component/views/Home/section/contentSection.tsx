@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
-//import TextTransition, { presets } from "react-text-transition";
+import TextTransition, { presets } from "react-text-transition";
 import { Container, Header } from '../styles/contentSectionStyles';
 import { data } from '../content/data';
 
 const ContentSection = () => {
   const [index, setIndex] = useState(0);
   const { header, subHeader, career, career2, mainContent, btn } = data;
-  const renderCareer = () => career.map((value: { title: string }) => (
-    <h2>{value.title}</h2>));
+  // const renderCareer = () => career.map((value: { title: string }) => (
+  //   <h2 key={value.title}>{value.title}</h2>));
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -21,15 +21,14 @@ const ContentSection = () => {
   return (<Container>
     <Header>{header}</Header>
     <Header>{subHeader}</Header>
-    {renderCareer()}
-{/* <h1>
+    {/* {renderCareer()} */}
+ {/* <h1>
       <TextTransition
         text={career2[index % career2.length]}
         springConfig={presets.wobbly}
       />
 
-    </h1>
-    <TextWrapper>
+    </h1> */}
         <h1>  {`${career2[index % career2.length]}`.split("").map((n, i) => (
       <TextTransition
         key={i}
@@ -41,7 +40,6 @@ const ContentSection = () => {
       />
     ))}
     </h1>
-    </TextWrapper> */}
     <p>{mainContent}</p>
     <a href={btn.src} download="my-awesome-resume">{btn.name}</a>
   </Container>)

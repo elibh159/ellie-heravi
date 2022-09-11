@@ -10,6 +10,9 @@ export const Container = styled.div`
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: space-between;
+  ${media.to.tablet`
+  flex-wrap: nowrap;
+  `}
 `;
 
 export const Sidebar = styled.div`

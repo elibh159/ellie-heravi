@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { media } from "../../../utilities/grid";
 import { MenuProps } from "../../../../interface/navbar";
 
+ 
 export const MenuContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -12,16 +13,20 @@ export const MenuContainer = styled.div`
     align-items: flex-end;
   `}
 `;
-export const SubLink = styled(Link)`
+export const SubLink = styled(NavLink)`
   padding: 1rem;
   margin: 0;
   text-decoration: none;
   color: ${props => props.theme.color.white};
   font-weight: bold;  
-  ${media.from.tablet`
-    margin: 2rem;
-    color: black;
+  ${({theme})=>media.from.tablet`
+    color: ${theme.color.gray};
   `}
+  &.active{
+    color: ${props => props.theme.color.white};
+    background-color: ${props => props.theme.color.green};
+
+  }
   &:hover {
     background-color: ${props => props.theme.color.green};
     ${media.from.tablet`
@@ -39,6 +44,7 @@ export const MenuWrapper = styled.div<MenuProps>`
     display: flex;  
     flex-direction: row;
     justify-content: flex-end;
+    margin: 2rem;
   `}
 `;
 export const HamburgerWrapper = styled.div`
