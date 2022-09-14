@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../utilities/grid";
 
 export const Container = styled.div`
-  width: 100%;
+  margin: 2rem;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -10,6 +10,7 @@ export const Container = styled.div`
   align-self: flex-end;
   ${media.from.tablet`
     width: 85%;
+    margin: 0;
   `}
 `;
 
