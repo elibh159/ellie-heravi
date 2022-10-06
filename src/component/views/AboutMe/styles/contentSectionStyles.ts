@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { media } from "../../../utilities/grid";
-import { H1 } from "../../../utilities/baseUI";
+import { H1, Button } from "../../../utilities/baseUI";
 
 export const Container = styled.div`
   width: 100%;
