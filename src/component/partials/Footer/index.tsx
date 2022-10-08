@@ -1,5 +1,5 @@
 import { data } from './content/data';
-import { ThisWrapper, Title, FooterLink, FotterIcon  } from './styles';
+import { ThisWrapper, Title, FooterLink, FotterIcon } from './styles';
 
 const Footer = () => (
     <ThisWrapper>

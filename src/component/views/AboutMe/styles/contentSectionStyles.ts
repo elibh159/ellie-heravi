@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { media } from "../../../utilities/grid";
 import { H1 } from "../../../utilities/baseUI";
@@ -9,7 +10,7 @@ export const Container = styled.div`
   flex-wrap: nowrap;
   align-items: flex-start;
   padding: 2rem 0;
-  ${({theme})=>media.from.tablet`
+  ${({ theme }) => media.from.tablet`
     width: 66%;
     padding: 0 4rem;
     height: 520px;
@@ -34,14 +35,50 @@ export const Container = styled.div`
   `}
 `;
 
-export const Header = styled(H1)`
+export const Title = styled.div`
+  background: black;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-transform: capitalize;
 `;
+
 export const TextWrapper = styled.h1`
   ${H1};
-  text-transform: uppercase;
+  margin: 0;
+  text-transform: capitalize;
   color: ${props => props.theme.color.green};
 `;
-export const LinkButton = styled.a` 
+
+export const ListBox = styled.div`
+display: flex;
+flex-direction: row;
+width: 100%;
+flex-wrap: wrap;
+`;
+
+export const ItemList = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+    ${media.from.desktop`
+      width: 47%;
+      margin-right: 5px;
+    `}
+`;
+
+export const ItemListTitle = styled.span`
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-right: 5px;
+`;
+
+export const ButtonBox= styled.div`
+`;
+
+export const LinkButton = styled(Link)` 
   border: 0.2rem solid ${props => props.theme.color.green};
   padding: 0.6rem 1.25rem;
   color: ${props => props.theme.color.gray};
@@ -51,4 +88,5 @@ export const LinkButton = styled.a`
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  margin-right: 1rem;
 `;
