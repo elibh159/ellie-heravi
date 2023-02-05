@@ -20,7 +20,7 @@ const ContentSection = () => {
             </ListBox>
             <ButtonBox>
                 {data.btns.map(({ src, name }) => (
-                    <LinkButton to={src}>{name}</LinkButton>
+                    <LinkButton to={src} key={name}>{name}</LinkButton>
                 ))}
             </ButtonBox>
         </Container>)
