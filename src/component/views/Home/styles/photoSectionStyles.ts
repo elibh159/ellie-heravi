@@ -4,8 +4,9 @@ import { media } from "../../../utilities/grid";
 export const Container = styled.div`
   display: flex;
   ${media.from.tablet`
-   max-width: 33%;
-   justify-content: center;
+    max-width: 33%;
+    justify-content: center;
+    margin: 3rem;
   `}   
 `;
 

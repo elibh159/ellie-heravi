@@ -13,6 +13,7 @@ import { Container, Sidebar } from './AppStyles';
 
 const Home = lazy(() => import("./component/views/Home"));
 const AboutMe = lazy(() => import("./component/views/AboutMe"));
+const Portfolio = lazy(() => import("./component/views/portfolio"));
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/Home" element={<Home />} />
               <Route path="/AboutMe" element={<AboutMe />} />
+              <Route path="/Portfolio" element={<Portfolio/>} />
             </Routes>
             <Footer />
           </Suspense>

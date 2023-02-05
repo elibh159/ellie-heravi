@@ -13,6 +13,10 @@ export const data = {
         link: 'AboutMe'
     },
     {
+        title: 'Portfolio',
+        link: 'Portfolio'
+    },
+    {
         title: 'Resume',
         link: 'Resume'
     },
